@@ -1,0 +1,1 @@
+@py.exe C:\Users\Lento\personalBatches\mcb.py %*
