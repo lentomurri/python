@@ -1,8 +1,18 @@
 import shutil, os, re
+from pathlib import Path
+from send2trash import send2trash
 
-listFile = os.listdir(r"C:\Users\Lento\personalBatches")
+workingDirectory = r"C:\Users\Lento\personalBatches"
+os.chdir(workingDirectory)
+listFile = os.listdir(workingDirectory)
+
+# image regex search: [\w\W]+(\.jpg|\.jpeg|\.psd|\.png)$ // folder: jpg folder
+# text regex search: 
+# text regex search: [\w\W]+(\.pdf|\.txt)$ // folder: pdf folder
 
 for item in listFile:
-    if re.match(r"\w+\.\w+", item):
-        shutil.copy(r"C:\Users\Lento\personalBatches\\" + item, r"C:\Users\Lento\Desktop\SelfTaught\tstp\python")
+    if re.match(r"[\w\W]+(\.py)$", item, re.IGNORECASE):
+        # print(item)
+        shutil.copy(Path(item).absolute(), r"C:\Users\Lento\Desktop\SelfTaught\tstp\python")
+        # send2trash(item)
 
