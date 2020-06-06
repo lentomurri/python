@@ -15,8 +15,6 @@ except:
     print("Invalid path. Please check the provided path is the absolute one.")
     input("Press any key to exit")
 
-print(filedir)
-
 def regexSearch(filedir):
     finalResult = ""
     for item in filedir:
