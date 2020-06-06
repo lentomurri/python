@@ -14,7 +14,7 @@ from playsound import playsound
 try:
     userMins = sys.argv[1]
 except:
-    input("Please insert minutes, followed by seconds if needed. Press any key to exit")
+    input("On the command line, please insert minutes, followed by seconds if needed. Press any key to exit. ")
     
 
 try:
@@ -37,7 +37,7 @@ def pomodoroTimer(userTime):
     # displays image and sound
     finalImg = Image.open(r"C:\Users\Lento\personalBatches\pomodoroTimer.jpg")
     finalImg.show()
-    playsound(r"C:\Users\Lento\personalBatches\yolo yolo yolo.mp3")
+    playsound(r"C:\Users\Lento\personalBatches\DNA whistle.mp3")
     
 
 pomodoroTimer(timing)
