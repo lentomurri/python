@@ -9,7 +9,12 @@ phoneNumbercheck = re.compile(r'''
 ''', re.VERBOSE)
 
 emailCheck = re.compile(r'''
-[^\.\w]\w+[!#\$%&'\*\+-/=\?\^_`{\|}~]*(?:\.\w+)?(?:\".*\")?\w*@\w+\.\w+
+[^\.\w] # not starting with a dot
+\w+
+[!#\$%&'\*\+-/=\?\^_`{\|}~]* #allows some special character
+(?:\.\w+)? # check if there is a single dot followed by character
+(?:\".*\")? #check if there are characters surrounded by at least 2 quotes
+\w*@\w+\.\w+ 
 ''', re.VERBOSE)
 
 result = re.findall(emailCheck, data)
