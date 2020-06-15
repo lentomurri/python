@@ -1,3 +1,7 @@
+#! python3
+# The program will fish from a JSON file the data needed to create a questionnaire
+# "Which one is the capital of this State"
+
 import random, json
 
 with open (r"C:\Users\Lento\personalBatches\capitals.json", "r") as capitals:
