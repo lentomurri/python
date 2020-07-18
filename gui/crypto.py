@@ -1,8 +1,6 @@
 from cryptography.fernet import Fernet
 import os
 
-# the program will take 
-
 class KeyGenerator():
     base_key = os.path.join(os.path.dirname(__file__), "secret.key")
     def __init__(self, password = None):
