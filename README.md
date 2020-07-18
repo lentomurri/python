@@ -1,2 +1,2 @@
 # python
-Python scripts and batches
+Some programs and GUI Tkinter applications
