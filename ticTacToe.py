@@ -83,13 +83,16 @@ while True:
     positions = Manager().positions
     win = Manager().win
     moves = Manager().moves
+
     print(board)
     make_list_of_free_fields(positions)
     enter_move(positions)
     print(board)
+    #breaks game if all fields are occupied
     if moves == 9:
         print("It's a tie!")
         break
+    #compares current board and checks for victory
     check = victory_for(positions, win)
     if check:
         print(check)
