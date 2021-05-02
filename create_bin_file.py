@@ -1,4 +1,9 @@
-﻿from os import strerror
+#!/usr/bin/env python3
+
+#A program created to memorise binary mode in IO operations. 
+# Context managers weren't used just to make sure "close" operations would be implented.
+
+from os import strerror
 
 srcname = input("Enter the source file name: ")
 try:
