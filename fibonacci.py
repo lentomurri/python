@@ -1,4 +1,8 @@
-﻿def fib(n):
+#!/usr/bin/env python3
+
+#Fibonacci program that generates the sum up to the n number without recursive functions.
+
+def fib(n):
     if n < 1:
         return None
     if n < 3:
