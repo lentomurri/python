@@ -1,12 +1,11 @@
 #! python3
 
 # The program will:
-# search for American Style Dates file name and replace them with European Dates
+# search for American Style Dates file name 
+#replace them with European Dates
 
 import re, os
 from pathlib import Path
-
-workingFolder = r"C:\Users\Lento\personalBatches\text"
 
 def searchRegex(fileDirectory):
     # regex for search
@@ -24,15 +23,5 @@ def searchRegex(fileDirectory):
     else:
         print("Please enter a valid folder")
             
-
-searchRegex(workingFolder)
-
-
-
-# print(europeanString)
-
-#create a regex to find American Style Dates
-# capture and store months and days group
-# open dir
-# open listdir
-# for each item: if i matches the american regex, rewrite file name with european style.
+if name == "__main__":
+    searchRegex(fileDirectory)
