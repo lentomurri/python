@@ -23,12 +23,12 @@ def getComics():
         url = "http:" + images[2]["src"]
         getExtension = url[len(url) -4: len(url)]
         saveImage = Image.open(requests.get(url, stream=True).raw)
-        saveImage.save(r"C:\Users\Lento\Desktop\comics folder\comic" + str(number) + getExtension)
+        saveImage.save(r"path_to_folder" + str(number) + getExtension)
         # get the new page to search for 
         previousLink = soup.find(rel = "prev")
         if previousLink["href"] == "#":
             break
-        startingPage = "https://xkcd.com" + previousLink["href"]
+        startingPage = "INSERT_HTTP_PAGE" + previousLink["href"]
         number +=1
 
 getComics()
