@@ -1,4 +1,8 @@
-﻿user = "The die is cast"
+#!/usr/bin/env python3
+
+#Caesar cypher game. It can be upgraded entering a user inout for the sentence as well.
+
+user = "The die is cast"
 result = []
 
 while True:
