@@ -1,18 +1,19 @@
-# TODO the program will iterate through a comic website and download a certain number of images
-# TODO can go as far as the beginning or in a set range
-# TODO It will create a folder where to store the img in a set location
+#  the program will iterate through a comic website and download a certain number of images
+#  can go as far as the beginning or in a set range
+#  It will create a folder where to store the img in a set location.
+#THIS PROGRAM IS A WEB PARSER. IT'S BUILT AROUND A SPECIFIC WEBSITE. IT CAN BE ADAPTED.
 
 import requests, os, re
 from PIL import Image
 from bs4 import  BeautifulSoup
 
-if not os.path.exists(r"C:\Users\Lento\Desktop\comics folder"):
-    os.mkdir(r"C:\Users\Lento\Desktop\comics folder")
+if not os.path.exists(r"path_to_folder"):
+    os.mkdir(r"path_to_folder")
 
 # LOOP
 # get the starting page 
 def getComics():
-    startingPage = "https://xkcd.com/"
+    startingPage = "insert_http_page"
     # iterate through it until the image is found
     number = 0
     while True:
@@ -31,8 +32,3 @@ def getComics():
         number +=1
 
 getComics()
-
-
-#get the src from the img tag, open
-# download the file to the folder
-# the new starting page will be the initial one + the "rel" in the previous item
