@@ -1,6 +1,6 @@
 #! python3
 
-#creates backup copies in xip files with incremental number as filename.
+#creates backup copies in zip files with incremental number as filename.
 # with a loop, if the file doesn't already exists, it creates an incremental number copy.
 
 import zipfile, os
