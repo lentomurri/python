@@ -1,10 +1,12 @@
-#! python3
+#! usr/bin/env python3
+
+# The program savesm updates or saves in the clipboard a particular list of key-values.
+#It can be used as a very simple username - mail storage.
 import sys, shelve, pyperclip
 
-shelfFile = shelve.open(r"C:\Users\Lento\personalBatches\variables")
+shelfFile = shelve.open(r"path_to_folder")
 
 def multiclipboard():
-        #if there's the list keyword and length == 2:
         if len(sys.argv) >= 2:
             action = sys.argv[1].lower()
             if action == "list" and len(sys.argv) == 2: 
