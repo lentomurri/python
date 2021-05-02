@@ -10,7 +10,10 @@ def searchMap():
         sys.argv.pop(0)
         address = "+".join(sys.argv)
     else:
-        address = pyperclip.paste()
+        try:
+            address = pyperclip.paste()
+        except:
+            print("No address found")
     webbrowser.open(r"https://www.google.com/maps/place/" + address)
 
 searchMap()
