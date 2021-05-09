@@ -1,22 +1,25 @@
-﻿import re
+# The program will create a file with students' names and associated mark. 
+# It will use two Classes to create personalised errors and a main function to create the file and the student ID.
+# If the student exists, the mark will be added to the current mark. Else, the student will be created.
+
+import re
 from os import strerror
 
-class StudentsDataException(Exception):
-    pass
+# Error Classe
 
-class BadLine(StudentsDataException):
-    # Write your code here.
+class BadLine(Exception):
     def __init__(self, message = "The data is invalid"):
         self.message = message
     def __str__(self):
         return self.message
 
-class FileEmpty(StudentsDataException):
-    # Write your code here.
+class FileEmpty(Exception):
     def __init__(self, message = "The file is empty"):
         self.message = message
     def __str__(self):
         return self.message
+    
+# Check for file existence and validity
         
 def fileCheck(file):
     try:
@@ -27,6 +30,8 @@ def fileCheck(file):
             fle.close()
     except FileNotFoundError as e:
         print(strerror(e.errno))
+
+# Create or Update Student Data
 
 def student():
     user = input("Insert path of the file: > ")
