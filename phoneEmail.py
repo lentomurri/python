@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+
+#A program to practice re, pyperclib and subprocess.
+# The program will iterate through pasted data from any source. 
+# It will save on the clipboard the email and phone number retrieved by performing checks against the regex. 
+# A notepad page will pop up to allow the user to paste the data obtained parsing the source. 
+
 import re, pyperclip, subprocess
 
 data = pyperclip.paste()
