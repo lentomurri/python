@@ -1,6 +1,6 @@
 #! python3
 
-#the programs finds automatically a particular location in Google Maps, taking it from the sys.
+#the programs finds automatically a particular location in Google Maps, taking it from the sys.argv
 # if the sys.argv is empty, it will take the address from the clipboard
 
 import sys, webbrowser, pyperclip
