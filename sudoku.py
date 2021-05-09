@@ -1,4 +1,6 @@
-﻿#create empty row to store numbers. NO NEED TO CONVERT
+#The program can be used to check a solution for an existing Sudoku or create a new one
+
+#create empty row to store numbers. NO NEED TO CONVERT
 def sudokuNow():
     sudoku = []
     # insert 9 time the rows. Check everytime if the row is made of numbers. Remove spaces, Try/except
