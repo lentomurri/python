@@ -1,6 +1,6 @@
 #! usr/bin/env python3
 
-# The program savesm updates or saves in the clipboard a particular list of key-values.
+# The program updates or saves in the clipboard a particular list of key-values.
 #It can be used as a very simple username - mail storage.
 import sys, shelve, pyperclip
 
