@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 #A program created to memorise binary mode in IO operations. 
-# Context managers weren't used just to make sure "close" operations would be implented.
+# Context managers weren't used just to make sure "close" operations would be practiced properly as requested in the exercise brief.
 
 from os import strerror
 
