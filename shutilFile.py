@@ -1,3 +1,6 @@
+# A program that uses regex to locate different file types and create copies in organised folders.
+#It can optionally delete the copied file to create space and improve organisation.
+
 import shutil, os, re
 from pathlib import Path
 from send2trash import send2trash as stt
